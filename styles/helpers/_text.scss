@@ -1,0 +1,132 @@
+@import "_variables";
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--secondary-text-color);
+}
+
+figcaption,
+button,
+a,
+small {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--text-color);
+}
+
+small {
+  font-style: italic;
+}
+
+main {
+  section.introduction {
+    p {
+      width: 80%;
+    }
+  }
+  section.projects {
+    article {
+      article.content {
+        h2 {
+          text-align: center;
+        }
+        p:first-of-type {
+          text-align: center;
+        }
+        p:nth-of-type(2) {
+          text-align: left;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  main {
+    section.introduction {
+      p {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  figcaption,
+  p,
+  em {
+    font-size: 1.1em;
+  }
+
+  small {
+    font-size: 1em;
+  }
+
+  main {
+    section.introduction {
+      p {
+        width: 60%;
+      }
+    }
+    section.projects {
+      article {
+        article.content {
+          p:nth-of-type(2) {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    section.projects {
+      article {
+        article.content {
+          p:nth-of-type(2) {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  // figcaption,
+  // p,
+  // em {
+  //   font-size: 1.2em;
+  // }
+  main {
+    section.projects {
+      article {
+        article.content {
+          p:nth-of-type(2) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  main {
+    section.projects {
+      article {
+        article.content {
+          p:nth-of-type(2) {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}

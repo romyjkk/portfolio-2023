@@ -1,0 +1,232 @@
+@import "../helpers/_variables";
+
+main {
+  margin: 3em 0 3em 0;
+  section.introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    figure.my-picture {
+      position: relative;
+      //   width: 100%;
+      img {
+        border-radius: 200px;
+        width: 8em;
+        position: relative;
+        // transform: translate(4em, 0);
+      }
+      figcaption {
+        position: absolute;
+        // bottom: 0;
+        // right: 0;
+        background: var(--quartenary-background);
+        padding: 0.5em;
+        width: fit-content;
+        transform: translate(3em, -2em);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: var(--tertiary-background);
+        width: 8em;
+        bottom: -0.5em;
+        left: -0.5em;
+        aspect-ratio: 1/1;
+        border-radius: 200px;
+        // transform: translate(4em, 0);
+      }
+    }
+  }
+  section.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-row-gap: 2em;
+    article {
+      article.background {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 80%;
+        }
+        a {
+          position: absolute;
+          width: 12em;
+          transform: translate(0, 1em);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s;
+          img {
+            transition: 0.5s;
+          }
+
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+          &:active {
+            img {
+              filter: drop-shadow(0em 0em 0.5em #1a1a1a);
+            }
+          }
+        }
+      }
+      article.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7em;
+      }
+      article.button {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+          background: var(--button-color);
+          padding: 0.5em;
+          border-radius: 20px;
+
+          &:hover {
+            background: var(--button-hover-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  main {
+    margin: 5em 0 5em 0;
+    section.projects {
+      article {
+        article.background {
+          svg {
+            width: 60%;
+          }
+          a {
+            width: 13em;
+          }
+        }
+        article.content {
+          margin-bottom: 2em;
+          gap: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    section.introduction {
+      figure.my-picture {
+        img {
+          width: 10em;
+        }
+        &::before {
+          width: 10em;
+        }
+      }
+    }
+    section.projects {
+      article {
+        article.background {
+          svg {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    section.projects {
+      width: 90%;
+      article {
+        display: flex;
+        // flex-direction: row;
+        &:first-of-type,
+        &:nth-of-type(3),
+        &:nth-of-type(5) {
+          flex-direction: row;
+        }
+        &:nth-of-type(2),
+        &:nth-of-type(4) {
+          flex-direction: row-reverse;
+        }
+        article.background {
+          svg {
+            width: 30em;
+          }
+          a {
+            width: 13em;
+          }
+        }
+        article.content {
+          align-self: center;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    section.introduction {
+      gap: 4em;
+      p {
+        width: 50%;
+      }
+    }
+    section.projects {
+      article {
+        article.background {
+          svg {
+            width: 35em;
+          }
+          a {
+            width: 18em;
+          }
+        }
+        article.content {
+          gap: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    section.projects {
+      width: 80%;
+      article {
+        article.background {
+          svg {
+            width: 40em;
+          }
+          a {
+            width: 23em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefef;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="13.24" y="0" width="5.51" height="32" rx="2.76" ry="2.76" transform="translate(38.63 16) rotate(135)"/>
+  <rect class="cls-1" x="13.24" y="0" width="5.51" height="32" rx="2.76" ry="2.76" transform="translate(16 -6.63) rotate(45)"/>
+</svg>

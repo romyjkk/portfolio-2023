@@ -1,0 +1,36 @@
+:root {
+  // breakpoints
+
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1440px;
+
+  // icon sizes
+
+  --icon-sm: 16px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-xl: 48px;
+
+  // colors
+
+  // background
+
+  --background: #efefef;
+  --secondary-background: #517eb5;
+  --tertiary-background: #1c4b8e;
+  --quartenary-background: #84b2ea;
+
+  // text
+
+  --text-color: #efefef;
+  --secondary-text-color: #232323;
+
+  // interactive elements
+
+  --button-color: #517eb5;
+  --button-hover-color: #1c4b8e;
+  --button-active-color: #1a1a1a;
+}

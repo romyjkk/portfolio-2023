@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #517fb5;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #efefef;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="0" y="0" width="31.99" height="31.99" rx="2.65" ry="2.65"/>
+  <rect class="cls-1" x="4.8" y="12.03" width="4.74" height="15.15"/>
+  <circle class="cls-1" cx="7.17" cy="7.18" r="2.7"/>
+  <path class="cls-1" d="m25.69,13.09c-1.85-1.5-3.07-1.44-4.35-1.44s-3.39.73-4.11,2.19v-1.8h-4.74v15.15h4.74v-8.16c.01-.68.24-3.23,2.77-3.23,2.92,0,2.53,3.81,2.53,3.81v7.58h4.74v-7.58s.27-5.01-1.58-6.52Z"/>
+</svg>

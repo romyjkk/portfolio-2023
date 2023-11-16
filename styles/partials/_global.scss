@@ -1,0 +1,56 @@
+@import "../helpers/_variables";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  // outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  path {
+    fill: var(--secondary-background);
+  }
+}
+
+.hidden {
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  // transform: scale(0.9);
+}
+
+.open-menu {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  // transform: scale(1);
+}
+
+a:focus,
+button:focus {
+  outline: none;
+  border: 3px dotted var(--button-active-color);
+}

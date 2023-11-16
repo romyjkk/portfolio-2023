@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="gmail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #517fb5;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #efefef;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="32" height="32" rx="2.65" ry="2.65"/>
+  <g>
+    <path class="cls-1" d="m1.7,10.84v-2.77s.08-1.55,1.33-2.29,2.56-.39,3-.1,10.92,8.16,10.92,8.16l-1.02,7.65L1.7,10.84"/>
+    <g>
+      <path class="cls-1" d="m1.7,8.63h6.44v18.04H3.91c-1.23,0-2.22-.99-2.22-2.22v-15.82h0Z"/>
+      <path class="cls-1" d="m25.94,8.63h4.22v18.04h-6.44v-15.82c0-1.23.99-2.22,2.22-2.22Z" transform="translate(53.88 35.29) rotate(-180)"/>
+    </g>
+    <path class="cls-1" d="m30.16,10.83v-2.77s-.08-1.55-1.33-2.29-2.56-.39-3-.1-10.92,8.16-10.92,8.16l1.02,7.65,14.23-10.65"/>
+  </g>
+</svg>
