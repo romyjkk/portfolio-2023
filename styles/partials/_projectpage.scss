@@ -1,0 +1,160 @@
+@import "../helpers/_variables";
+
+main.project-page {
+  margin: 0 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  section.project-introduction {
+    article.introduction-background {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      figure {
+        position: absolute;
+        width: 70%;
+      }
+    }
+    article.introduction-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      text-align: center;
+      transform: translate(0, -2em);
+      p {
+        font-style: italic;
+      }
+    }
+  }
+  section.process {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    article.content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 1em;
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+        p {
+          width: 80%;
+        }
+      }
+      figure {
+        padding: 1em;
+        background: var(--secondary-background);
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  main.project-page {
+    section.project-introduction {
+      article.introduction-background {
+        svg {
+          width: 60%;
+        }
+        figure {
+          // width: 13em;
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main.project-page {
+    section.project-introduction {
+      article.introduction-background {
+        svg {
+          width: 60%;
+        }
+        figure {
+          // width: 15em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main.project-page {
+    section.project-introduction {
+      article.introduction-background {
+        svg {
+          width: 50%;
+        }
+        figure {
+          // width: 18em;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main.project-page {
+    section.project-introduction {
+      article.introduction-background {
+        svg {
+          width: 40%;
+        }
+        figure {
+          width: 18em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main.project-page {
+    section.project-introduction {
+      article.introduction-background {
+        svg {
+          width: 40%;
+        }
+        figure {
+          // width: 22em;
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1650px) {
+  main.project-page {
+    section.project-introduction {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      article.introduction-background {
+        svg {
+          width: 40%;
+        }
+        figure {
+          transform: translate(0, -2em);
+        }
+      }
+      article.introduction-content {
+        position: absolute;
+        align-self: center;
+        bottom: 0;
+        transform: translate(0, -12em);
+        h1,
+        p {
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}

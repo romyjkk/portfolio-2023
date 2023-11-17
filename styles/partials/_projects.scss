@@ -1,6 +1,6 @@
 @import "../helpers/_variables";
 
-main {
+main.home {
   margin: 3em 0 3em 0;
   section.introduction {
     display: flex;
@@ -10,17 +10,13 @@ main {
     gap: 2em;
     figure.my-picture {
       position: relative;
-      //   width: 100%;
       img {
         border-radius: 200px;
         width: 8em;
         position: relative;
-        // transform: translate(4em, 0);
       }
       figcaption {
         position: absolute;
-        // bottom: 0;
-        // right: 0;
         background: var(--quartenary-background);
         padding: 0.5em;
         width: fit-content;
@@ -35,14 +31,12 @@ main {
         left: -0.5em;
         aspect-ratio: 1/1;
         border-radius: 200px;
-        // transform: translate(4em, 0);
       }
     }
   }
   section.projects {
     display: grid;
     grid-template-columns: 1fr;
-    // grid-row-gap: 2em;
     article {
       article.background {
         position: relative;
@@ -105,7 +99,7 @@ main {
 }
 
 @media (min-width: 576px) {
-  main {
+  main.home {
     margin: 5em 0 5em 0;
     section.projects {
       article {
@@ -127,7 +121,7 @@ main {
 }
 
 @media (min-width: 768px) {
-  main {
+  main.home {
     section.introduction {
       figure.my-picture {
         img {
@@ -151,7 +145,7 @@ main {
 }
 
 @media (min-width: 992px) {
-  main {
+  main.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,7 +154,6 @@ main {
       width: 90%;
       article {
         display: flex;
-        // flex-direction: row;
         &:first-of-type,
         &:nth-of-type(3),
         &:nth-of-type(5) {
@@ -188,7 +181,7 @@ main {
 }
 
 @media (min-width: 1200px) {
-  main {
+  main.home {
     section.introduction {
       gap: 4em;
       p {
@@ -214,7 +207,7 @@ main {
 }
 
 @media (min-width: 1400px) {
-  main {
+  main.home {
     section.projects {
       width: 80%;
       article {

@@ -11,12 +11,16 @@
   --background: #efefef;
   --secondary-background: #517eb5;
   --tertiary-background: #1c4b8e;
-  --quartenary-background: #84b2ea;
+  --quartenary-background: #a2bed8;
   --text-color: #efefef;
   --secondary-text-color: #232323;
   --button-color: #517eb5;
   --button-hover-color: #1c4b8e;
   --button-active-color: #1a1a1a;
+}
+
+h1 {
+  font-size: 1.3em;
 }
 
 h1,
@@ -40,21 +44,36 @@ small {
   font-style: italic;
 }
 
-main section.introduction p {
+em {
+  font-weight: 400;
+}
+
+main.home section.introduction p {
   width: 80%;
 }
-main section.projects article article.content h2 {
+main.home section.projects article article.content h2 {
   text-align: center;
 }
-main section.projects article article.content p:first-of-type {
+main.home section.projects article article.content p:first-of-type {
   text-align: center;
 }
-main section.projects article article.content p:nth-of-type(2) {
+main.home section.projects article article.content p:nth-of-type(2) {
   text-align: left;
   width: 80%;
 }
 
+main.project-page section.project-introduction article.introduction-content p {
+  font-style: italic;
+}
+main.project-page section.process h2 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
+  h1 {
+    font-size: 1.5em;
+  }
   main section.introduction p {
     width: 70%;
   }
@@ -103,7 +122,7 @@ main section.projects article article.content p:nth-of-type(2) {
   --background: #efefef;
   --secondary-background: #517eb5;
   --tertiary-background: #1c4b8e;
-  --quartenary-background: #84b2ea;
+  --quartenary-background: #a2bed8;
   --text-color: #efefef;
   --secondary-text-color: #232323;
   --button-color: #517eb5;
@@ -124,7 +143,7 @@ main section.projects article article.content p:nth-of-type(2) {
   --background: #efefef;
   --secondary-background: #517eb5;
   --tertiary-background: #1c4b8e;
-  --quartenary-background: #84b2ea;
+  --quartenary-background: #a2bed8;
   --text-color: #efefef;
   --secondary-text-color: #232323;
   --button-color: #517eb5;
@@ -280,7 +299,7 @@ footer small {
   --background: #efefef;
   --secondary-background: #517eb5;
   --tertiary-background: #1c4b8e;
-  --quartenary-background: #84b2ea;
+  --quartenary-background: #a2bed8;
   --text-color: #efefef;
   --secondary-text-color: #232323;
   --button-color: #517eb5;
@@ -288,32 +307,32 @@ footer small {
   --button-active-color: #1a1a1a;
 }
 
-main {
+main.home {
   margin: 3em 0 3em 0;
 }
-main section.introduction {
+main.home section.introduction {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 2em;
 }
-main section.introduction figure.my-picture {
+main.home section.introduction figure.my-picture {
   position: relative;
 }
-main section.introduction figure.my-picture img {
+main.home section.introduction figure.my-picture img {
   border-radius: 200px;
   width: 8em;
   position: relative;
 }
-main section.introduction figure.my-picture figcaption {
+main.home section.introduction figure.my-picture figcaption {
   position: absolute;
   background: var(--quartenary-background);
   padding: 0.5em;
   width: fit-content;
   transform: translate(3em, -2em);
 }
-main section.introduction figure.my-picture::before {
+main.home section.introduction figure.my-picture::before {
   content: "";
   position: absolute;
   background: var(--tertiary-background);
@@ -323,20 +342,20 @@ main section.introduction figure.my-picture::before {
   aspect-ratio: 1/1;
   border-radius: 200px;
 }
-main section.projects {
+main.home section.projects {
   display: grid;
   grid-template-columns: 1fr;
 }
-main section.projects article article.background {
+main.home section.projects article article.background {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main section.projects article article.background svg {
+main.home section.projects article article.background svg {
   width: 80%;
 }
-main section.projects article article.background a {
+main.home section.projects article article.background a {
   position: absolute;
   width: 12em;
   transform: translate(0, 1em);
@@ -346,118 +365,118 @@ main section.projects article article.background a {
   align-items: center;
   transition: 0.5s;
 }
-main section.projects article article.background a img {
+main.home section.projects article article.background a img {
   transition: 0.5s;
 }
-main section.projects article article.background a:hover img {
+main.home section.projects article article.background a:hover img {
   transform: scale(1.1);
 }
-main section.projects article article.background a:active img {
+main.home section.projects article article.background a:active img {
   filter: drop-shadow(0em 0em 0.5em #1a1a1a);
 }
-main section.projects article article.content {
+main.home section.projects article article.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.7em;
 }
-main section.projects article article.button {
+main.home section.projects article article.button {
   display: flex;
   justify-content: center;
   margin-top: 2em;
 }
-main section.projects article article.button a {
+main.home section.projects article article.button a {
   text-decoration: none;
   color: var(--text-color);
   background: var(--button-color);
   padding: 0.5em;
   border-radius: 20px;
 }
-main section.projects article article.button a:hover {
+main.home section.projects article article.button a:hover {
   background: var(--button-hover-color);
 }
 
 @media (min-width: 576px) {
-  main {
+  main.home {
     margin: 5em 0 5em 0;
   }
-  main section.projects article article.background svg {
+  main.home section.projects article article.background svg {
     width: 60%;
   }
-  main section.projects article article.background a {
+  main.home section.projects article article.background a {
     width: 13em;
   }
-  main section.projects article article.content {
+  main.home section.projects article article.content {
     margin-bottom: 2em;
     gap: 1em;
   }
 }
 @media (min-width: 768px) {
-  main section.introduction figure.my-picture img {
+  main.home section.introduction figure.my-picture img {
     width: 10em;
   }
-  main section.introduction figure.my-picture::before {
+  main.home section.introduction figure.my-picture::before {
     width: 10em;
   }
-  main section.projects article article.background svg {
+  main.home section.projects article article.background svg {
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  main {
+  main.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  main section.projects {
+  main.home section.projects {
     width: 90%;
   }
-  main section.projects article {
+  main.home section.projects article {
     display: flex;
   }
-  main section.projects article:first-of-type, main section.projects article:nth-of-type(3), main section.projects article:nth-of-type(5) {
+  main.home section.projects article:first-of-type, main.home section.projects article:nth-of-type(3), main.home section.projects article:nth-of-type(5) {
     flex-direction: row;
   }
-  main section.projects article:nth-of-type(2), main section.projects article:nth-of-type(4) {
+  main.home section.projects article:nth-of-type(2), main.home section.projects article:nth-of-type(4) {
     flex-direction: row-reverse;
   }
-  main section.projects article article.background svg {
+  main.home section.projects article article.background svg {
     width: 30em;
   }
-  main section.projects article article.background a {
+  main.home section.projects article article.background a {
     width: 13em;
   }
-  main section.projects article article.content {
+  main.home section.projects article article.content {
     align-self: center;
     margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
-  main section.introduction {
+  main.home section.introduction {
     gap: 4em;
   }
-  main section.introduction p {
+  main.home section.introduction p {
     width: 50%;
   }
-  main section.projects article article.background svg {
+  main.home section.projects article article.background svg {
     width: 35em;
   }
-  main section.projects article article.background a {
+  main.home section.projects article article.background a {
     width: 18em;
   }
-  main section.projects article article.content {
+  main.home section.projects article article.content {
     gap: 2em;
   }
 }
 @media (min-width: 1400px) {
-  main section.projects {
+  main.home section.projects {
     width: 80%;
   }
-  main section.projects article article.background svg {
+  main.home section.projects article article.background svg {
     width: 40em;
   }
-  main section.projects article article.background a {
+  main.home section.projects article article.background a {
     width: 23em;
   }
 }
@@ -474,7 +493,7 @@ main section.projects article article.button a:hover {
   --background: #efefef;
   --secondary-background: #517eb5;
   --tertiary-background: #1c4b8e;
-  --quartenary-background: #84b2ea;
+  --quartenary-background: #a2bed8;
   --text-color: #efefef;
   --secondary-text-color: #232323;
   --button-color: #517eb5;
@@ -529,4 +548,137 @@ a:focus,
 button:focus {
   outline: none;
   border: 3px dotted var(--button-active-color);
+}
+
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1440px;
+  --icon-sm: 16px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-xl: 48px;
+  --background: #efefef;
+  --secondary-background: #517eb5;
+  --tertiary-background: #1c4b8e;
+  --quartenary-background: #a2bed8;
+  --text-color: #efefef;
+  --secondary-text-color: #232323;
+  --button-color: #517eb5;
+  --button-hover-color: #1c4b8e;
+  --button-active-color: #1a1a1a;
+}
+
+main.project-page {
+  margin: 0 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main.project-page section.project-introduction article.introduction-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.project-page section.project-introduction article.introduction-background figure {
+  position: absolute;
+  width: 70%;
+}
+main.project-page section.project-introduction article.introduction-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: center;
+  transform: translate(0, -2em);
+}
+main.project-page section.project-introduction article.introduction-content p {
+  font-style: italic;
+}
+main.project-page section.process {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main.project-page section.process article.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1em;
+}
+main.project-page section.process article.content article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+}
+main.project-page section.process article.content article p {
+  width: 80%;
+}
+main.project-page section.process article.content figure {
+  padding: 1em;
+  background: var(--secondary-background);
+}
+
+@media (min-width: 576px) {
+  main.project-page section.project-introduction article.introduction-background svg {
+    width: 60%;
+  }
+  main.project-page section.project-introduction article.introduction-background figure {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  main.project-page section.project-introduction article.introduction-background svg {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  main.project-page section.project-introduction article.introduction-background svg {
+    width: 50%;
+  }
+  main.project-page section.project-introduction article.introduction-background figure {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  main.project-page section.project-introduction article.introduction-background svg {
+    width: 40%;
+  }
+  main.project-page section.project-introduction article.introduction-background figure {
+    width: 18em;
+  }
+}
+@media (min-width: 1200px) {
+  main.project-page section.project-introduction article.introduction-background svg {
+    width: 40%;
+  }
+  main.project-page section.project-introduction article.introduction-background figure {
+    width: 25%;
+  }
+}
+@media (min-width: 1650px) {
+  main.project-page section.project-introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  main.project-page section.project-introduction article.introduction-background svg {
+    width: 40%;
+  }
+  main.project-page section.project-introduction article.introduction-background figure {
+    transform: translate(0, -2em);
+  }
+  main.project-page section.project-introduction article.introduction-content {
+    position: absolute;
+    align-self: center;
+    bottom: 0;
+    transform: translate(0, -12em);
+  }
+  main.project-page section.project-introduction article.introduction-content h1,
+  main.project-page section.project-introduction article.introduction-content p {
+    color: var(--text-color);
+  }
 }/*# sourceMappingURL=styles.css.map */

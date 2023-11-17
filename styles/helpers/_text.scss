@@ -1,5 +1,9 @@
 @import "_variables";
 
+h1 {
+  font-size: 1.3em;
+}
+
 h1,
 h2,
 h3,
@@ -21,7 +25,11 @@ small {
   font-style: italic;
 }
 
-main {
+em {
+  font-weight: 400;
+}
+
+main.home {
   section.introduction {
     p {
       width: 80%;
@@ -45,7 +53,26 @@ main {
   }
 }
 
+main.project-page {
+  section.project-introduction {
+    article.introduction-content {
+      p {
+        font-style: italic;
+      }
+    }
+  }
+  section.process {
+    h2 {
+      font-size: 1.3em;
+      text-align: center;
+    }
+  }
+}
+
 @media (min-width: 576px) {
+  h1 {
+    font-size: 1.5em;
+  }
   main {
     section.introduction {
       p {
