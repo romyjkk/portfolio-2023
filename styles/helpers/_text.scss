@@ -21,6 +21,11 @@ small {
   color: var(--text-color);
 }
 
+p,
+a {
+  font-size: 1.1em;
+}
+
 small {
   font-style: italic;
 }
@@ -63,7 +68,7 @@ main.project-page {
   }
   section.process {
     h2 {
-      font-size: 1.3em;
+      // font-size: 1.3em;
       text-align: center;
     }
   }

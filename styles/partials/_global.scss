@@ -29,12 +29,6 @@ button {
   cursor: pointer;
 }
 
-svg {
-  path {
-    fill: var(--secondary-background);
-  }
-}
-
 .hidden {
   // display: none;
   visibility: hidden;

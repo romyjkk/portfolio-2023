@@ -4,8 +4,10 @@ main.project-page {
   margin: 0 0 3em 0;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 3em;
   section.project-introduction {
+    display: flex;
+    flex-direction: column;
     article.introduction-background {
       position: relative;
       display: flex;
@@ -16,14 +18,33 @@ main.project-page {
         width: 70%;
       }
     }
-    article.introduction-content {
+    article.achievements {
       display: flex;
       flex-direction: column;
-      gap: 0.5em;
-      text-align: center;
-      transform: translate(0, -2em);
-      p {
-        font-style: italic;
+      gap: 1em;
+      width: 90%;
+      align-self: center;
+      h2 {
+        text-align: center;
+      }
+      ul {
+        // list-style-type: square;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+      }
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        background: var(--button-color);
+        width: fit-content;
+        padding: 0.5em;
+        border-radius: 20px;
+        align-self: center;
+
+        &:hover {
+          background: var(--button-hover-color);
+        }
       }
     }
   }
@@ -31,23 +52,47 @@ main.project-page {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    justify-content: center;
+    align-items: center;
     article.content {
       display: grid;
       grid-template-columns: 1fr;
-      grid-row-gap: 1em;
+      grid-row-gap: 2em;
+      align-items: center;
+      justify-content: center;
+      // width: 90%;
       article {
         display: flex;
         flex-direction: column;
-        gap: 0.5em;
         align-items: center;
+        gap: 0.5em;
         p {
-          width: 80%;
+          width: 90%;
         }
       }
       figure {
-        padding: 1em;
-        background: var(--secondary-background);
+        display: flex;
+        justify-content: center;
+        img {
+          width: 90%;
+        }
       }
+    }
+  }
+  section.results {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    figure {
+      width: 90%;
+    }
+    p {
+      width: 90%;
     }
   }
 }
@@ -60,9 +105,29 @@ main.project-page {
           width: 60%;
         }
         figure {
-          // width: 13em;
           width: 40%;
         }
+      }
+      article.achievements {
+        width: 80%;
+        ul {
+          list-style-type: square;
+        }
+      }
+    }
+    section.process {
+      article.content {
+        article {
+          p {
+            width: 80%;
+          }
+        }
+        // width: 80%;
+      }
+    }
+    section.results {
+      p {
+        width: 80%;
       }
     }
   }
@@ -75,9 +140,31 @@ main.project-page {
         svg {
           width: 60%;
         }
-        figure {
-          // width: 15em;
+      }
+      article.achievements {
+        width: 70%;
+      }
+    }
+    section.process {
+      article.content {
+        article {
+          p {
+            width: 70%;
+          }
         }
+        figure {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+    section.results {
+      figure {
+        width: 80%;
+      }
+      p {
+        width: 70%;
       }
     }
   }
@@ -91,9 +178,33 @@ main.project-page {
           width: 50%;
         }
         figure {
-          // width: 18em;
           width: 30%;
         }
+      }
+      article.achievements {
+        width: 60%;
+      }
+    }
+    section.process {
+      article.content {
+        article {
+          p {
+            width: 60%;
+          }
+        }
+        figure {
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+    section.results {
+      figure {
+        width: 70%;
+      }
+      p {
+        width: 60%;
       }
     }
   }
@@ -109,6 +220,20 @@ main.project-page {
         figure {
           width: 18em;
         }
+      }
+    }
+    section.process {
+      article.content {
+        figure {
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+    section.results {
+      figure {
+        width: 60%;
       }
     }
   }
