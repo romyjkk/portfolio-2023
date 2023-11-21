@@ -1,9 +1,5 @@
 @import "_variables";
 
-h1 {
-  font-size: 1.3em;
-}
-
 h1,
 h2,
 h3,
@@ -21,9 +17,17 @@ small {
   color: var(--text-color);
 }
 
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
 p,
 a {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 small {
@@ -60,9 +64,10 @@ main.home {
 
 main.project-page {
   section.project-introduction {
-    article.introduction-content {
+    article.introduction-title {
+      h1,
       p {
-        font-style: italic;
+        text-align: center;
       }
     }
   }
@@ -117,6 +122,9 @@ main.project-page {
 }
 
 @media (min-width: 992px) {
+  h1 {
+    font-size: 1.7em;
+  }
   main {
     section.projects {
       article {

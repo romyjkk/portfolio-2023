@@ -17,7 +17,7 @@ main.home {
       }
       figcaption {
         position: absolute;
-        background: var(--quartenary-background);
+        background: var(--background);
         padding: 0.5em;
         width: fit-content;
         transform: translate(3em, -2em);
@@ -44,7 +44,7 @@ main.home {
         justify-content: center;
         align-items: center;
         svg {
-          width: 80%;
+          width: 100%;
         }
         a {
           position: absolute;

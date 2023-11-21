@@ -8,19 +8,14 @@
   --icon-md: 24px;
   --icon-lg: 32px;
   --icon-xl: 48px;
-  --background: #efefef;
-  --secondary-background: #517eb5;
-  --tertiary-background: #1c4b8e;
-  --quartenary-background: #a2bed8;
+  --background: #2c2f33;
+  --secondary-background: #9eb5d6;
+  --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
-  --button-color: #517eb5;
-  --button-hover-color: #1c4b8e;
+  --button-color: #466ca4;
+  --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
-}
-
-h1 {
-  font-size: 1.3em;
 }
 
 h1,
@@ -40,9 +35,17 @@ small {
   color: var(--text-color);
 }
 
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
 p,
 a {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 small {
@@ -67,8 +70,9 @@ main.home section.projects article article.content p:nth-of-type(2) {
   width: 80%;
 }
 
-main.project-page section.project-introduction article.introduction-content p {
-  font-style: italic;
+main.project-page section.project-introduction article.introduction-title h1,
+main.project-page section.project-introduction article.introduction-title p {
+  text-align: center;
 }
 main.project-page section.process h2 {
   text-align: center;
@@ -99,6 +103,9 @@ main.project-page section.process h2 {
   }
 }
 @media (min-width: 992px) {
+  h1 {
+    font-size: 1.7em;
+  }
   main section.projects article article.content p:nth-of-type(2) {
     width: 90%;
   }
@@ -123,14 +130,13 @@ main.project-page section.process h2 {
   --icon-md: 24px;
   --icon-lg: 32px;
   --icon-xl: 48px;
-  --background: #efefef;
-  --secondary-background: #517eb5;
-  --tertiary-background: #1c4b8e;
-  --quartenary-background: #a2bed8;
+  --background: #2c2f33;
+  --secondary-background: #9eb5d6;
+  --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
-  --button-color: #517eb5;
-  --button-hover-color: #1c4b8e;
+  --button-color: #466ca4;
+  --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
 }
 
@@ -144,19 +150,18 @@ main.project-page section.process h2 {
   --icon-md: 24px;
   --icon-lg: 32px;
   --icon-xl: 48px;
-  --background: #efefef;
-  --secondary-background: #517eb5;
-  --tertiary-background: #1c4b8e;
-  --quartenary-background: #a2bed8;
+  --background: #2c2f33;
+  --secondary-background: #9eb5d6;
+  --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
-  --button-color: #517eb5;
-  --button-hover-color: #1c4b8e;
+  --button-color: #466ca4;
+  --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
 }
 
 header {
-  background: var(--secondary-background);
+  background: var(--background);
   height: 3em;
   position: sticky;
   width: 100%;
@@ -188,7 +193,7 @@ header nav button#close-menu {
 ul.hamburger-menu {
   position: fixed;
   top: 3em;
-  background: var(--secondary-background);
+  background: var(--background);
   flex-direction: column;
   width: 100%;
   height: 100vh;
@@ -205,7 +210,7 @@ ul.navigation a {
   font-size: 20px;
   position: relative;
   padding-bottom: 2px;
-  background-image: linear-gradient(var(--background), var(--background));
+  background-image: linear-gradient(var(--tertiary-background), var(--tertiary-background));
   background-size: 0% 0.1em;
   background-position-y: 100%;
   background-position-x: 50%;
@@ -223,7 +228,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: var(--secondary-background);
+  background: var(--background);
   width: 100%;
   height: 3em;
 }
@@ -300,14 +305,13 @@ footer small {
   --icon-md: 24px;
   --icon-lg: 32px;
   --icon-xl: 48px;
-  --background: #efefef;
-  --secondary-background: #517eb5;
-  --tertiary-background: #1c4b8e;
-  --quartenary-background: #a2bed8;
+  --background: #2c2f33;
+  --secondary-background: #9eb5d6;
+  --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
-  --button-color: #517eb5;
-  --button-hover-color: #1c4b8e;
+  --button-color: #466ca4;
+  --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
 }
 
@@ -331,7 +335,7 @@ main.home section.introduction figure.my-picture img {
 }
 main.home section.introduction figure.my-picture figcaption {
   position: absolute;
-  background: var(--quartenary-background);
+  background: var(--background);
   padding: 0.5em;
   width: fit-content;
   transform: translate(3em, -2em);
@@ -357,7 +361,7 @@ main.home section.projects article article.background {
   align-items: center;
 }
 main.home section.projects article article.background svg {
-  width: 80%;
+  width: 100%;
 }
 main.home section.projects article article.background a {
   position: absolute;
@@ -494,14 +498,13 @@ main.home section.projects article article.button a:hover {
   --icon-md: 24px;
   --icon-lg: 32px;
   --icon-xl: 48px;
-  --background: #efefef;
-  --secondary-background: #517eb5;
-  --tertiary-background: #1c4b8e;
-  --quartenary-background: #a2bed8;
+  --background: #2c2f33;
+  --secondary-background: #9eb5d6;
+  --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
-  --button-color: #517eb5;
-  --button-hover-color: #1c4b8e;
+  --button-color: #466ca4;
+  --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
 }
 
@@ -550,6 +553,12 @@ button:focus {
   border: 3px dotted var(--button-active-color);
 }
 
+main img.background-lines {
+  position: absolute;
+  z-index: -1;
+  top: 5em;
+}
+
 :root {
   --sm: 576px;
   --md: 768px;
@@ -560,14 +569,13 @@ button:focus {
   --icon-md: 24px;
   --icon-lg: 32px;
   --icon-xl: 48px;
-  --background: #efefef;
-  --secondary-background: #517eb5;
-  --tertiary-background: #1c4b8e;
-  --quartenary-background: #a2bed8;
+  --background: #2c2f33;
+  --secondary-background: #9eb5d6;
+  --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
-  --button-color: #517eb5;
-  --button-hover-color: #1c4b8e;
+  --button-color: #466ca4;
+  --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
 }
 
@@ -580,6 +588,14 @@ main.project-page {
 main.project-page section.project-introduction {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+main.project-page section.project-introduction article.introduction-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 90%;
 }
 main.project-page section.project-introduction article.introduction-background {
   position: relative;
@@ -591,22 +607,17 @@ main.project-page section.project-introduction article.introduction-background f
   position: absolute;
   width: 70%;
 }
-main.project-page section.project-introduction article.achievements {
+main.project-page section.project-introduction article.introduction-text {
   display: flex;
   flex-direction: column;
   gap: 1em;
   width: 90%;
   align-self: center;
 }
-main.project-page section.project-introduction article.achievements h2 {
+main.project-page section.project-introduction article.introduction-text h2 {
   text-align: center;
 }
-main.project-page section.project-introduction article.achievements ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-main.project-page section.project-introduction article.achievements a {
+main.project-page section.project-introduction article.introduction-text a {
   color: var(--text-color);
   text-decoration: none;
   background: var(--button-color);
@@ -615,7 +626,7 @@ main.project-page section.project-introduction article.achievements a {
   border-radius: 20px;
   align-self: center;
 }
-main.project-page section.project-introduction article.achievements a:hover {
+main.project-page section.project-introduction article.introduction-text a:hover {
   background: var(--button-hover-color);
 }
 main.project-page section.process {

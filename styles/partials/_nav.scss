@@ -1,7 +1,7 @@
 @import "../helpers/_variables";
 
 header {
-  background: var(--secondary-background);
+  background: var(--background);
   height: 3em;
   position: sticky;
   width: 100%;
@@ -34,7 +34,7 @@ header {
 ul.hamburger-menu {
   position: fixed;
   top: 3em;
-  background: var(--secondary-background);
+  background: var(--background);
   flex-direction: column;
   width: 100%;
   height: 100vh;
@@ -53,7 +53,10 @@ ul.navigation {
     position: relative;
     padding-bottom: 2px;
 
-    background-image: linear-gradient(var(--background), var(--background));
+    background-image: linear-gradient(
+      var(--tertiary-background),
+      var(--tertiary-background)
+    );
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 50%;
@@ -74,7 +77,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: var(--secondary-background);
+  background: var(--background);
   width: 100%;
   height: 3em;
   ul {
