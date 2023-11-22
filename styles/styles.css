@@ -9,7 +9,7 @@
   --icon-lg: 32px;
   --icon-xl: 48px;
   --background: #2c2f33;
-  --secondary-background: #9eb5d6;
+  --secondary-background: #c9d3e3;
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
@@ -131,7 +131,7 @@ main.project-page section.process h2 {
   --icon-lg: 32px;
   --icon-xl: 48px;
   --background: #2c2f33;
-  --secondary-background: #9eb5d6;
+  --secondary-background: #c9d3e3;
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
@@ -151,7 +151,7 @@ main.project-page section.process h2 {
   --icon-lg: 32px;
   --icon-xl: 48px;
   --background: #2c2f33;
-  --secondary-background: #9eb5d6;
+  --secondary-background: #c9d3e3;
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
@@ -306,7 +306,7 @@ footer small {
   --icon-lg: 32px;
   --icon-xl: 48px;
   --background: #2c2f33;
-  --secondary-background: #9eb5d6;
+  --secondary-background: #c9d3e3;
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
@@ -343,7 +343,7 @@ main.home section.introduction figure.my-picture figcaption {
 main.home section.introduction figure.my-picture::before {
   content: "";
   position: absolute;
-  background: var(--tertiary-background);
+  background: var(--background);
   width: 8em;
   bottom: -0.5em;
   left: -0.5em;
@@ -365,7 +365,7 @@ main.home section.projects article article.background svg {
 }
 main.home section.projects article article.background a {
   position: absolute;
-  width: 12em;
+  width: 70%;
   transform: translate(0, 1em);
   display: flex;
   flex-direction: column;
@@ -412,7 +412,7 @@ main.home section.projects article article.button a:hover {
     width: 60%;
   }
   main.home section.projects article article.background a {
-    width: 13em;
+    width: 40%;
   }
   main.home section.projects article article.content {
     margin-bottom: 2em;
@@ -428,6 +428,9 @@ main.home section.projects article article.button a:hover {
   }
   main.home section.projects article article.background svg {
     width: 50%;
+  }
+  main.home section.projects article article.background a {
+    width: 30%;
   }
 }
 @media (min-width: 992px) {
@@ -453,7 +456,7 @@ main.home section.projects article article.button a:hover {
     width: 30em;
   }
   main.home section.projects article article.background a {
-    width: 13em;
+    width: 60%;
   }
   main.home section.projects article article.content {
     align-self: center;
@@ -471,7 +474,7 @@ main.home section.projects article article.button a:hover {
     width: 35em;
   }
   main.home section.projects article article.background a {
-    width: 18em;
+    width: 60%;
   }
   main.home section.projects article article.content {
     gap: 2em;
@@ -483,9 +486,6 @@ main.home section.projects article article.button a:hover {
   }
   main.home section.projects article article.background svg {
     width: 40em;
-  }
-  main.home section.projects article article.background a {
-    width: 23em;
   }
 }
 :root {
@@ -499,7 +499,7 @@ main.home section.projects article article.button a:hover {
   --icon-lg: 32px;
   --icon-xl: 48px;
   --background: #2c2f33;
-  --secondary-background: #9eb5d6;
+  --secondary-background: #c9d3e3;
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
@@ -516,6 +516,9 @@ main.home section.projects article article.button a:hover {
 body {
   padding: 0;
   margin: 0;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
@@ -553,12 +556,6 @@ button:focus {
   border: 3px dotted var(--button-active-color);
 }
 
-main img.background-lines {
-  position: absolute;
-  z-index: -1;
-  top: 5em;
-}
-
 :root {
   --sm: 576px;
   --md: 768px;
@@ -570,7 +567,7 @@ main img.background-lines {
   --icon-lg: 32px;
   --icon-xl: 48px;
   --background: #2c2f33;
-  --secondary-background: #9eb5d6;
+  --secondary-background: #c9d3e3;
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
@@ -602,6 +599,7 @@ main.project-page section.project-introduction article.introduction-background {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 main.project-page section.project-introduction article.introduction-background figure {
   position: absolute;

@@ -25,7 +25,7 @@ main.home {
       &::before {
         content: "";
         position: absolute;
-        background: var(--tertiary-background);
+        background: var(--background);
         width: 8em;
         bottom: -0.5em;
         left: -0.5em;
@@ -48,7 +48,8 @@ main.home {
         }
         a {
           position: absolute;
-          width: 12em;
+          // width: 13em;
+          width: 70%;
           transform: translate(0, 1em);
           display: flex;
           flex-direction: column;
@@ -108,7 +109,8 @@ main.home {
             width: 60%;
           }
           a {
-            width: 13em;
+            // width: 15em;
+            width: 40%;
           }
         }
         article.content {
@@ -137,6 +139,9 @@ main.home {
         article.background {
           svg {
             width: 50%;
+          }
+          a {
+            width: 30%;
           }
         }
       }
@@ -168,7 +173,8 @@ main.home {
             width: 30em;
           }
           a {
-            width: 13em;
+            // width: 13em;
+            width: 60%;
           }
         }
         article.content {
@@ -195,7 +201,8 @@ main.home {
             width: 35em;
           }
           a {
-            width: 18em;
+            // width: 18em;
+            width: 60%;
           }
         }
         article.content {
@@ -216,7 +223,7 @@ main.home {
             width: 40em;
           }
           a {
-            width: 23em;
+            // width: 23em;
           }
         }
       }

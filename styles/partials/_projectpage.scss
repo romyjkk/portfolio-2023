@@ -1,6 +1,11 @@
 @import "../helpers/_variables";
 
 main.project-page {
+  // figure.background-lines {
+  //   img.background-line:nth-of-type(7) {
+  //     display: none;
+  //   }
+  // }
   margin: 0 0 3em 0;
   display: flex;
   flex-direction: column;
@@ -21,6 +26,7 @@ main.project-page {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
       figure {
         position: absolute;
         width: 70%;
