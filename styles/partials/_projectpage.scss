@@ -119,6 +119,7 @@ a.go-to {
 @media (min-width: 576px) {
   main.project-page {
     section.project-introduction {
+      margin-top: 4em;
       article.introduction-background {
         svg {
           width: 60%;
@@ -340,15 +341,22 @@ a.go-to {
           transform: translate(0, -2em);
         }
       }
-      article.introduction-content {
-        position: absolute;
-        align-self: center;
-        bottom: 0;
-        transform: translate(0, -12em);
-        h1,
-        p {
-          color: var(--text-color);
+      article.introduction-text {
+        width: 40%;
+      }
+    }
+    section.process {
+      article.content {
+        article {
+          p {
+            width: 40%;
+          }
         }
+      }
+    }
+    section.results {
+      p {
+        width: 40%;
       }
     }
   }

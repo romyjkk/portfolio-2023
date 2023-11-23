@@ -690,6 +690,9 @@ a.go-to:hover {
 }
 
 @media (min-width: 576px) {
+  main.project-page section.project-introduction {
+    margin-top: 4em;
+  }
   main.project-page section.project-introduction article.introduction-background svg {
     width: 60%;
   }
@@ -824,14 +827,13 @@ a.go-to:hover {
   main.project-page section.project-introduction article.introduction-background figure {
     transform: translate(0, -2em);
   }
-  main.project-page section.project-introduction article.introduction-content {
-    position: absolute;
-    align-self: center;
-    bottom: 0;
-    transform: translate(0, -12em);
+  main.project-page section.project-introduction article.introduction-text {
+    width: 40%;
   }
-  main.project-page section.project-introduction article.introduction-content h1,
-  main.project-page section.project-introduction article.introduction-content p {
-    color: var(--text-color);
+  main.project-page section.process article.content article p {
+    width: 40%;
+  }
+  main.project-page section.results p {
+    width: 40%;
   }
 }/*# sourceMappingURL=styles.css.map */
