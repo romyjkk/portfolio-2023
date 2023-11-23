@@ -42,58 +42,49 @@
             <article class="introduction-text">
                 <h2>INTRODUCTION</h2>
 
-                <p>During my internship I got the assignment to recreate the website from the Amsterdam Art Center.
-                    I learned to work with SCSS, and implemented Bootstrap for the layouts and responsiveness and Tiny Slider for the sliders on the page.
+                <p>During this assignment we got a lot of freedom, as long as we made a dashboard/an experience that conveys knowledge by parsing data and visualizing it. I decided to make an experience containing information about cats. I made an interactive map which shows the origins of cat breeds using Leaflet.js, and a bar chart with a filter function where you can see the most popular cat breeds in different parts of the world.
                 </p>
 
-                <a href="https://tech-track-22-23-six.vercel.app/" target="_blank">Check it out!</a>
+                <a class="go-to" href="https://tech-track-22-23-six.vercel.app/" target="_blank">Check it out!</a>
             </article>
         </section>
 
         <section class="process">
-            <h2>The process</h2>
+            <h2>PROCESS</h2>
 
             <article class="content">
+                
                 <article>
-                    <p>Firstly, I made a map using the Leaflet.JS library. This was a map showcasing the origin of different cat breeds. It’s interactive, you can zoom in and explore the world, clicking on the different markers for information.</p>
-                    <p> I used a JSON file to store the data and used a loop in JavaScript to create markers for every single cat. I added a custom location marker to make it fit my theme.</p>
+                    <p>Using Leaflet.js, it’s relatively easy to make an interactive map with a custom location marker and popups when you click on them. The information in these popups and their coördinates are stored in a JSON file. This data can be loaded into the map with JavaScript and looped so it will create a location marker containing the right information.</p>
+                    <p>The bar chart was made with D3, which, in my opinion, is a pretty difficult library to use. Once the bar chart itself was done, there was still a lot to do, like making custom SVG patterns for each cat to make them into the bars and also making the filter function. The filter function was made possible with some assistance from my teacher. By giving each cat its own ‘category’ in the JSON file, I could filter them based on their category using buttons.</p>
                 </article>
 
                 <figure>
-                    <img src="images/kattenknuffelaar/map.png" alt="The map I made using Leaflet.JS">
+                    <figure>
+                        <img src="images/kattenknuffelaar/map.png" alt="The map I made using Leaflet.JS">
+                        <figcaption>The map I made using Leaflet.js.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/kattenknuffelaar/barchart-2.png" alt="The bar chart I made using D3, filtered">
+                        <figcaption>The bar chart I made using D3.js.</figcaption>
+                    </figure>
+                    
                 </figure>
 
-                <article>
-                    <p>When this was done, it was time for my main visualization, a bar chart using D3 showing the most popular cat breeds in different parts of the world. The cats are all custom SVG patterns.
-                    </p>
-                </article>
-
-                <figure>
-                    <img src="images/kattenknuffelaar/barchart-1.png" alt="The bar chart I made using D3">
-                </figure>
-
-                <article>
-                    <p>When the bar chart was done, it was time to add a filter function. I had some trouble with it, but with some assistance from my teacher, a working filter function was made. When you clicked one of the buttons, the data and the images change.</p>
-                </article>
-
-                <figure>
-                    <img src="images/kattenknuffelaar/barchart-2.png" alt="The bar chart, filtered">
-                </figure>
-
-                <article>
-                    <p>The final task was to add a bit of storytelling and make sure everything looked aesthetically pleasing.</p>
-                </article>
             </article>
         </section>
 
         <section class="results">
-            <h2>The results</h2>
+            <h2>RESULTS</h2>
 
             <figure>
                 <img src="images/kattenknuffelaar/cathuggerresults.gif" alt="The results">
             </figure>
 
-            <p>Using the knowledge I aqcuired over the past weeks, I made a web page all about cats, with interactive data visualizations.</p>
+            <p>Using the knowledge I aqcuired during this project, I made a web page all about cats, with interactive data visualizations and interesting information about cats.</p>
+            <p>If you want to check out the code or the full documentation:</p>
+            
+            <a class="go-to" href="https://github.com/romyjkk/tech-track-22-23" target="_blank">Github repo</a>
         </section>
 
     </main>
