@@ -491,6 +491,14 @@ main.home section.projects article article.button a:hover {
     width: 40em;
   }
 }
+@media (min-width: 1650px) {
+  main.home section.introduction p {
+    width: 40%;
+  }
+  main.home section.projects article article.content p:nth-of-type(2) {
+    width: 70%;
+  }
+}
 :root {
   --sm: 576px;
   --md: 768px;

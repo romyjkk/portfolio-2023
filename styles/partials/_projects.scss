@@ -230,3 +230,22 @@ main.home {
     }
   }
 }
+
+@media (min-width: 1650px) {
+  main.home {
+    section.introduction {
+      p {
+        width: 40%;
+      }
+    }
+    section.projects {
+      article {
+        article.content {
+          p:nth-of-type(2) {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
