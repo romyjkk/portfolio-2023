@@ -47,3 +47,12 @@ button:focus {
   outline: none;
   border: 3px dotted var(--button-active-color);
 }
+
+p {
+  a {
+    color: var(--button-color);
+    &:hover {
+      color: var(--button-hover-color);
+    }
+  }
+}

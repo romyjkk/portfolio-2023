@@ -72,14 +72,19 @@ main.project-page {
         gap: 1em;
         background: var(--background);
         padding: 1em 0;
+        img {
+          width: 90%;
+        }
+        img {
+          width: 90%;
+        }
+      }
+      figure.double-image {
         figure {
           display: flex;
           flex-direction: column;
           gap: 1em;
           padding: 0;
-          img {
-            width: 90%;
-          }
         }
       }
     }
@@ -148,6 +153,11 @@ a.go-to {
         figure {
           gap: 2em;
           padding: 4em 0;
+          img {
+            width: 80%;
+          }
+        }
+        figure.double-image {
           figure {
             padding: 0;
             img {
@@ -155,7 +165,6 @@ a.go-to {
             }
           }
         }
-        // width: 80%;
       }
     }
     section.results {
@@ -187,7 +196,14 @@ a.go-to {
         }
         figure {
           img {
-            width: 60%;
+            width: 70%;
+          }
+        }
+        figure.double-image {
+          figure {
+            img {
+              width: 60%;
+            }
           }
         }
       }
@@ -228,11 +244,15 @@ a.go-to {
           }
         }
         figure {
+          img {
+            width: 60%;
+          }
+        }
+        figure.double-image {
           flex-direction: row;
           figure {
             img {
               height: 15em;
-              // width: 100%;
               width: auto;
               align-self: flex-start;
             }
@@ -267,6 +287,11 @@ a.go-to {
     section.process {
       article.content {
         figure {
+          img {
+            width: 50%;
+          }
+        }
+        figure.double-image {
           figure {
             img {
               height: 18em;
@@ -291,7 +316,6 @@ a.go-to {
           width: 40%;
         }
         figure {
-          // width: 22em;
           width: 25%;
         }
       }
@@ -306,7 +330,7 @@ a.go-to {
             width: 50%;
           }
         }
-        figure {
+        figure.double-image {
           figure {
             img {
               height: 20em;
