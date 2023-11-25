@@ -13,6 +13,7 @@
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
+  --warning-text-color: #791111;
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
@@ -44,7 +45,8 @@ h2 {
 }
 
 p,
-a {
+a,
+button {
   font-size: 1em;
 }
 
@@ -138,6 +140,7 @@ main.project-page section.process h2 {
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
+  --warning-text-color: #791111;
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
@@ -158,6 +161,7 @@ main.project-page section.process h2 {
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
+  --warning-text-color: #791111;
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
@@ -313,6 +317,7 @@ footer small {
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
+  --warning-text-color: #791111;
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
@@ -514,6 +519,7 @@ main.home section.projects article article.button a:hover {
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
+  --warning-text-color: #791111;
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
@@ -574,6 +580,10 @@ p a:hover {
   color: var(--button-hover-color);
 }
 
+.spoiler-warning {
+  color: var(--warning-text-color);
+}
+
 :root {
   --sm: 576px;
   --md: 768px;
@@ -589,6 +599,7 @@ p a:hover {
   --tertiary-background: #efefef;
   --text-color: #efefef;
   --secondary-text-color: #232323;
+  --warning-text-color: #791111;
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
@@ -631,6 +642,9 @@ main.project-page section.project-introduction article.introduction-text {
   align-self: center;
 }
 main.project-page section.project-introduction article.introduction-text h2 {
+  text-align: center;
+}
+main.project-page section.project-introduction article.introduction-text p:nth-of-type(2) {
   text-align: center;
 }
 main.project-page section.process {
@@ -690,11 +704,15 @@ main.project-page section.results h2 {
 main.project-page section.results figure {
   width: 90%;
 }
+main.project-page section.results figure video {
+  width: 100%;
+}
 main.project-page section.results p {
   width: 90%;
 }
 
-a.go-to {
+a.go-to,
+button#horrorflix-go-to {
   color: var(--text-color);
   text-decoration: none;
   background: var(--button-color);
@@ -703,7 +721,8 @@ a.go-to {
   border-radius: 20px;
   align-self: center;
 }
-a.go-to:hover {
+a.go-to:hover,
+button#horrorflix-go-to:hover {
   background: var(--button-hover-color);
 }
 
@@ -742,6 +761,9 @@ a.go-to:hover {
   main.project-page section.process article.content figure.double-image figure img {
     width: 60%;
   }
+  main.project-page section.process article.content figure.double-code figure img {
+    width: 80%;
+  }
   main.project-page section.results p {
     width: 80%;
   }
@@ -756,16 +778,16 @@ a.go-to:hover {
   main.project-page section.process article.content article p {
     width: 70%;
   }
-  main.project-page section.process article.content figure img {
-    width: 70%;
-  }
-  main.project-page section.process article.content figure.double-image figure img {
-    width: 60%;
-  }
-  main.project-page section.results figure {
+  main.project-page section.process article.content figure img.horrorflix-js-code {
     width: 80%;
   }
-  main.project-page section.results p {
+  main.project-page section.process article.content figure img {
+    width: 80%;
+  }
+  section.results figure {
+    width: 80%;
+  }
+  section.results p {
     width: 70%;
   }
 }
@@ -787,7 +809,7 @@ a.go-to:hover {
     width: 60%;
   }
   main.project-page section.process article.content figure img {
-    width: 60%;
+    width: 70%;
   }
   main.project-page section.process article.content figure.double-image {
     flex-direction: row;
@@ -796,6 +818,9 @@ a.go-to:hover {
     height: 15em;
     width: auto;
     align-self: flex-start;
+  }
+  main.project-page section.process article.content figure.double-code figure img {
+    height: 13em;
   }
   main.project-page section.results {
     gap: 2em;
@@ -815,10 +840,13 @@ a.go-to:hover {
     width: 18em;
   }
   main.project-page section.process article.content figure img {
-    width: 50%;
+    width: 60%;
   }
   main.project-page section.process article.content figure.double-image figure img {
     height: 18em;
+  }
+  main.project-page section.process article.content figure.double-code figure img {
+    height: 17em;
   }
 }
 @media (min-width: 1400px) {
@@ -832,6 +860,9 @@ a.go-to:hover {
     width: 50%;
   }
   main.project-page section.process article.content article p {
+    width: 50%;
+  }
+  main.project-page section.process article.content figure img {
     width: 50%;
   }
   main.project-page section.process article.content figure.double-image figure img {

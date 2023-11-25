@@ -1,11 +1,6 @@
 @import "../helpers/_variables";
 
 main.project-page {
-  // figure.background-lines {
-  //   img.background-line:nth-of-type(7) {
-  //     display: none;
-  //   }
-  // }
   margin: 0 0 3em 0;
   display: flex;
   flex-direction: column;
@@ -39,6 +34,9 @@ main.project-page {
       width: 90%;
       align-self: center;
       h2 {
+        text-align: center;
+      }
+      p:nth-of-type(2) {
         text-align: center;
       }
     }
@@ -100,6 +98,9 @@ main.project-page {
     }
     figure {
       width: 90%;
+      video {
+        width: 100%;
+      }
     }
     p {
       width: 90%;
@@ -107,7 +108,8 @@ main.project-page {
   }
 }
 
-a.go-to {
+a.go-to,
+button#horrorflix-go-to {
   color: var(--text-color);
   text-decoration: none;
   background: var(--button-color);
@@ -165,6 +167,13 @@ a.go-to {
             }
           }
         }
+        figure.double-code {
+          figure {
+            img {
+              width: 80%;
+            }
+          }
+        }
       }
     }
     section.results {
@@ -195,26 +204,22 @@ a.go-to {
           }
         }
         figure {
-          img {
-            width: 70%;
+          img.horrorflix-js-code {
+            width: 80%;
           }
-        }
-        figure.double-image {
-          figure {
-            img {
-              width: 60%;
-            }
+          img {
+            width: 80%;
           }
         }
       }
     }
-    section.results {
-      figure {
-        width: 80%;
-      }
-      p {
-        width: 70%;
-      }
+  }
+  section.results {
+    figure {
+      width: 80%;
+    }
+    p {
+      width: 70%;
     }
   }
 }
@@ -245,7 +250,7 @@ a.go-to {
         }
         figure {
           img {
-            width: 60%;
+            width: 70%;
           }
         }
         figure.double-image {
@@ -255,6 +260,13 @@ a.go-to {
               height: 15em;
               width: auto;
               align-self: flex-start;
+            }
+          }
+        }
+        figure.double-code {
+          figure {
+            img {
+              height: 13em;
             }
           }
         }
@@ -288,13 +300,21 @@ a.go-to {
       article.content {
         figure {
           img {
-            width: 50%;
+            // width: 50%;
+            width: 60%;
           }
         }
         figure.double-image {
           figure {
             img {
               height: 18em;
+            }
+          }
+        }
+        figure.double-code {
+          figure {
+            img {
+              height: 17em;
             }
           }
         }
@@ -327,6 +347,11 @@ a.go-to {
       article.content {
         article {
           p {
+            width: 50%;
+          }
+        }
+        figure {
+          img {
             width: 50%;
           }
         }

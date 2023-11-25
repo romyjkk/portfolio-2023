@@ -1,3 +1,5 @@
+// hamburger menu
+
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const openMenuButton = document.getElementById("open-menu");
 const closeMenuButton = document.getElementById("close-menu");
@@ -20,3 +22,11 @@ function closeMenu() {
 }
 
 closeMenuButton.addEventListener("click", closeMenu);
+
+// scroll straight to results
+
+document.getElementById("horrorflix-go-to").addEventListener("click", () => {
+  document
+    .getElementById("horrorflix-results")
+    .scrollIntoView({ behavior: "smooth" });
+});
