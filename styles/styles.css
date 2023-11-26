@@ -694,6 +694,66 @@ main.project-page section.process article.content figure.double-image figure {
   gap: 1em;
   padding: 0;
 }
+main.project-page section.process article.content figure.amoebe figure {
+  padding: 0;
+}
+main.project-page section.process article.content figure.amoebe figure img {
+  width: 50%;
+}
+main.project-page section.process article.content figure.amoebe article.colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: baseline;
+  gap: 0.5em;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul li:first-of-type {
+  width: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul li:first-of-type p {
+  width: 100%;
+  text-align: center;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul li:nth-of-type(2) {
+  width: 70%;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul li:nth-of-type(2) p {
+  text-align: center;
+  width: 100%;
+  color: var(--text-color);
+}
+main.project-page section.process article.content figure.amoebe article.colors ul:first-of-type li:first-of-type {
+  background: #b1eeb0;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul:nth-of-type(2) li:first-of-type {
+  background: #ffffff;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul:nth-of-type(3) li:first-of-type {
+  background: #000000;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul:nth-of-type(3) li p {
+  color: var(--text-color);
+}
+main.project-page section.process article.content figure.amoebe article.colors ul:nth-of-type(4) li:first-of-type {
+  background: #6aafef;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul:nth-of-type(5) li:first-of-type {
+  background: #f36060;
+}
+main.project-page section.process article.content figure.amoebe article.colors ul:nth-of-type(6) li:first-of-type {
+  background: #53c951;
+}
 main.project-page section.results {
   display: flex;
   flex-direction: column;
@@ -769,6 +829,21 @@ button#amoebe-go-to:hover {
   main.project-page section.process article.content figure.double-image figure img.double-code {
     width: 80%;
   }
+  main.project-page section.process article.content figure.amoebe figure {
+    padding: 0;
+  }
+  main.project-page section.process article.content figure.amoebe figure img {
+    width: 40%;
+  }
+  main.project-page section.process article.content figure.amoebe article.colors {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main.project-page section.process article.content figure.amoebe article.colors ul {
+    gap: 1em;
+  }
+  main.project-page section.process article.content figure.amoebe article.colors ul li:first-of-type {
+    width: 70%;
+  }
   main.project-page section.results p {
     width: 80%;
   }
@@ -839,6 +914,12 @@ button#amoebe-go-to:hover {
     height: 13em;
     width: auto;
   }
+  main.project-page section.process article.content figure.amoebe figure img {
+    width: 50%;
+  }
+  main.project-page section.process article.content figure.amoebe article.colors {
+    width: 60%;
+  }
   main.project-page section.results {
     gap: 2em;
   }
@@ -871,6 +952,9 @@ button#amoebe-go-to:hover {
   main.project-page section.process article.content figure.double-image figure img.double-code {
     height: 17em;
   }
+  main.project-page section.process article.content figure.amoebe article.colors {
+    width: 50%;
+  }
 }
 @media (min-width: 1400px) {
   main.project-page section.project-introduction article.introduction-background svg {
@@ -899,6 +983,12 @@ button#amoebe-go-to:hover {
   }
   main.project-page section.process article.content figure.double-image figure img.double-code {
     height: 20em;
+  }
+  main.project-page section.process article.content figure.amoebe figure img {
+    width: 55%;
+  }
+  main.project-page section.process article.content figure.amoebe article.colors {
+    width: 40%;
   }
   main.project-page section.results figure {
     width: 50%;
