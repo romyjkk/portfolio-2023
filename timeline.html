@@ -43,11 +43,11 @@
             <article class="introduction-text">
                 <h2>INTRODUCTION</h2>
 
-                <p>The timeline had to be unique to the character, with a fitting design and semantic HTML, with a bunch of interactions and even an easter egg. I chose to make the timeline in the shape of vents, since this is the aliens primary travel method through ships.
+                <p>The timeline had to be unique to the character, with a fitting design and semantic HTML, with a bunch of interactions and even an easter egg. I chose to make the timeline in the shape of vents, since this is the aliens primary travel method through ships. If you want to check it out, I advise you to turn your sound down a bit!
                 </p>
 
                 <a class="go-to" href="https://romyjkk.github.io/interface-interaction/" target="_blank">Check it out!</a>
-                <p>* Works best on laptop screens</p>
+                <p class="spoiler-warning">* Viewer descretion is advised and it works best on laptop screens</p>
             </article>
         </section>
 
@@ -57,52 +57,56 @@
             <article class="content">
                 
                 <article>
-                    <p>Because there was so much that was new to me, I decided to start by looking into PHP and the Fetch API, so I at least understood what it was all about. I also thought about the form itself, what inputs it would have and how I would validate it.</p>
-                    <p>I got some help with starting it all up, so the Fetch API would send the data to my PHP form validation file, where I could work out the form validation and also add the code to send a mail. The PHP form validation went pretty good, there were only a few things I needed help with.</p>
+                    <p>To start with this project, I first needed a concept. Once I knew what character I was going to work with, I just had to figure out how I was going to design the timeline. I had a few different ideas:</p>
                 </article>
 
-                <figure class="double-image double-code">
+                <figure class="double-image">
                     <figure>
-                        <img src="images/horrorflix/php-name.png" alt="Some PHP form validation for a name">
-                        <figcaption>PHP code that validates the name.</figcaption>
+                        <img class="alien-sketches" src="images/alien-timeline/sketch-1.png" alt="Sketch of the design, a clickable ship">
+                        <figcaption>The spaceship, each part is clickable.</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/horrorflix/php-date.png" alt="Some PHP form validation for the age">
-                        <figcaption>PHP code that validates the age.</figcaption>
+                        <img class="alien-sketches" src="images/alien-timeline/sketch-2.png" alt="Sketch of the design, clickable vents">
+                        <figcaption>A vent system, each vent entrance is clickable.</figcaption>
                     </figure>
                 </figure>
 
                 <article>
-                    <p>When the form validation was done, I had to find a way to show the feedback messages on the page. This was eventually done by creating an if-statement, which says that if there’s an error, it will loop through the different fields and if there’s an error, it will create a div containing the error message. This was one of the most challenging parts for me, and I got some help with it.</p>
+                    <p>My preference went to the second one, since I thought this would be the best looking. When I asked my teacher for some feedback however, he told me this idea isn’t really unique to the Alien franchise. There’s many sci-fi movies with cool, futuristic space ships. He recommended me to go for the first one, because in which other movie can you think of the enemy crawling through vents?</p>
+                    <p>For the content, I chose for every single part of the Xenomorph’s life and the different mutations exist. I decided to go from movie 1-6, excluding Alien vs Predator and any of the games.</p>
+                    <p>Some of the design choices are based on the game Alien: Isolation, like when you click on a vent. The popup design is based on the terminals you see throughout the game. The easter egg I added is another example, this is the motion-tracker you carry with you to check if any enemies are nearby. The beeping noise and the dot let you know it’s getting closer or further away.</p>
                 </article>
 
-                <figure>
-                    <img src="images/horrorflix/js-code.png" alt="The JavaScript code written to show error messages">
-                    <figcaption>The JavaScript code to show the error messages.</figcaption>
+                <figure class="double-image">
+                    <figure>
+                        <img class="terminal" src="images/alien-timeline/popup.png" alt="The popup when you click on a vent">
+                        <figcaption>The popup.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img class="terminal" src="images/alien-timeline/terminal-game.jpeg" alt="The terminal from the game">
+                        <figcaption>The terminal from the game.</figcaption>
+                    </figure>
                 </figure>
 
-                <article>
-                    <p>Throughout the project I styled the form, added some fun animations and added an easter egg.</p>
-                </article>
-
+                <!-- https://steamcommunity.com/sharedfiles/filedetails/?l=german&id=329001415 
+                https://www.gamesradar.com/alien-isolation-archive-logs-location-guide/-->
             </article>
         </section>
 
         <section id="horrorflix-results" class="results">
             <h2>RESULTS</h2>
 
-            <figure>
-                <video autoplay muted loop playsinline><source src="images/horrorflix/horrorflix-results.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-            </figure>
+            
 
             <figure>
-                <img src="images/horrorflix/email.png" alt="The email that was sent">
+                <img src="images/alien-timeline/timeline-results.gif" alt="The results">
             </figure>
 
-            <p>With no prior knowledge of PHP, I made a sign up form with working PHP form validation and errors. When the sign up is complete, an email is sent containing the data used in the form.</p>
+            <p>For the time we were given, I’m proud of how far I came with this project. There’s definitely things I still want to improve someday, like the way I added the content. Currently this is a bunch of JavaScript eventListeners that add content on click, but my teacher adviced me to put all the data in a JSON file and use a JavaScript loop to retrieve the data and put it in the right spot.</p>
             <p>If you want to check out the code:</p>
             
-            <a class="go-to" href="https://github.com/romyjkk/horrorflix" target="_blank">Github repo</a>
+            <a class="go-to" href="https://github.com/romyjkk/interface-interaction" target="_blank">Github repo</a>
         </section>
 
     </main>

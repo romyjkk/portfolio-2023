@@ -685,6 +685,9 @@ main.project-page section.process article.content figure img {
 main.project-page section.process article.content figure img {
   width: 90%;
 }
+main.project-page section.process article.content figure figcaption {
+  padding: 0 1em;
+}
 main.project-page section.process article.content figure.double-image figure {
   display: flex;
   flex-direction: column;
@@ -761,7 +764,7 @@ button#horrorflix-go-to:hover {
   main.project-page section.process article.content figure.double-image figure img {
     width: 60%;
   }
-  main.project-page section.process article.content figure.double-code figure img {
+  main.project-page section.process article.content figure.double-image figure img.double-code {
     width: 80%;
   }
   main.project-page section.results p {
@@ -778,11 +781,14 @@ button#horrorflix-go-to:hover {
   main.project-page section.process article.content article p {
     width: 70%;
   }
-  main.project-page section.process article.content figure img.horrorflix-js-code {
-    width: 80%;
-  }
   main.project-page section.process article.content figure img {
     width: 80%;
+  }
+  main.project-page section.process article.content figure.double-image figure img.horrorflix-js-code {
+    width: 80%;
+  }
+  main.project-page section.process article.content figure.double-image figure img.alien-sketches {
+    width: 50%;
   }
   section.results figure {
     width: 80%;
@@ -819,8 +825,17 @@ button#horrorflix-go-to:hover {
     width: auto;
     align-self: flex-start;
   }
-  main.project-page section.process article.content figure.double-code figure img {
+  main.project-page section.process article.content figure.double-image figure img.alien-sketches {
+    height: 18em;
+    width: auto;
+    align-self: center;
+  }
+  main.project-page section.process article.content figure.double-image figure img.terminal {
+    height: 14em;
+  }
+  main.project-page section.process article.content figure.double-image figure img.double-code {
     height: 13em;
+    width: auto;
   }
   main.project-page section.results {
     gap: 2em;
@@ -845,7 +860,13 @@ button#horrorflix-go-to:hover {
   main.project-page section.process article.content figure.double-image figure img {
     height: 18em;
   }
-  main.project-page section.process article.content figure.double-code figure img {
+  main.project-page section.process article.content figure.double-image figure img.terminal {
+    height: 17em;
+  }
+  main.project-page section.process article.content figure.double-image figure img.alien-sketches {
+    height: 20em;
+  }
+  main.project-page section.process article.content figure.double-image figure img.double-code {
     height: 17em;
   }
 }
@@ -866,6 +887,15 @@ button#horrorflix-go-to:hover {
     width: 50%;
   }
   main.project-page section.process article.content figure.double-image figure img {
+    height: 20em;
+  }
+  main.project-page section.process article.content figure.double-image figure img.alien-sketches {
+    height: 25em;
+  }
+  main.project-page section.process article.content figure.double-image figure img.terminal {
+    height: 20em;
+  }
+  main.project-page section.process article.content figure.double-image figure img.double-code {
     height: 20em;
   }
   main.project-page section.results figure {
