@@ -715,7 +715,8 @@ main.project-page section.results p {
 }
 
 a.go-to,
-button#horrorflix-go-to {
+button#horrorflix-go-to,
+button#amoebe-go-to {
   color: var(--text-color);
   text-decoration: none;
   background: var(--button-color);
@@ -725,7 +726,8 @@ button#horrorflix-go-to {
   align-self: center;
 }
 a.go-to:hover,
-button#horrorflix-go-to:hover {
+button#horrorflix-go-to:hover,
+button#amoebe-go-to:hover {
   background: var(--button-hover-color);
 }
 
