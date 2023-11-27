@@ -411,9 +411,17 @@ button#amoebe-go-to {
           width: 18em;
         }
       }
+      article.introduction-text {
+        width: 50%;
+      }
     }
     section.process {
       article.content {
+        article {
+          p {
+            width: 50%;
+          }
+        }
         figure {
           img {
             // width: 50%;
@@ -441,6 +449,11 @@ button#amoebe-go-to {
             width: 50%;
           }
         }
+      }
+    }
+    section.results {
+      p {
+        width: 50%;
       }
     }
   }

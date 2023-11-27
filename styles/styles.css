@@ -58,6 +58,10 @@ em {
   font-weight: 400;
 }
 
+.text {
+  width: 90%;
+}
+
 main.home section.introduction p {
   width: 80%;
 }
@@ -937,6 +941,12 @@ button#amoebe-go-to:hover {
   main.project-page section.project-introduction article.introduction-background figure {
     width: 18em;
   }
+  main.project-page section.project-introduction article.introduction-text {
+    width: 50%;
+  }
+  main.project-page section.process article.content article p {
+    width: 50%;
+  }
   main.project-page section.process article.content figure img {
     width: 60%;
   }
@@ -953,6 +963,9 @@ button#amoebe-go-to:hover {
     height: 17em;
   }
   main.project-page section.process article.content figure.amoebe article.colors {
+    width: 50%;
+  }
+  main.project-page section.results p {
     width: 50%;
   }
 }
@@ -1017,6 +1030,156 @@ button#amoebe-go-to:hover {
     width: 40%;
   }
   main.project-page section.results p {
+    width: 40%;
+  }
+}
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1440px;
+  --icon-sm: 16px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-xl: 48px;
+  --background: #2c2f33;
+  --secondary-background: #c9d3e3;
+  --tertiary-background: #efefef;
+  --text-color: #efefef;
+  --secondary-text-color: #232323;
+  --warning-text-color: #791111;
+  --button-color: #466ca4;
+  --button-hover-color: #253957;
+  --button-active-color: #1a1a1a;
+}
+
+main.about-me {
+  margin: 0 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+}
+main.about-me section.about-me-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+main.about-me section.about-me-intro article.intro-background {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
+  position: absolute;
+  width: 60%;
+}
+main.about-me section.about-me-intro article.intro-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main.about-me section.about-me-intro article.intro-content h1,
+main.about-me section.about-me-intro article.intro-content p {
+  text-align: center;
+}
+main.about-me section.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main.about-me section.content article.something-about {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 90%;
+  align-self: center;
+}
+main.about-me section.content article.capabilities,
+main.about-me section.content article.personal-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  width: 100%;
+}
+main.about-me section.content article.capabilities ul,
+main.about-me section.content article.personal-skills ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  list-style-type: square;
+}
+main.about-me section.content article.capabilities {
+  background: var(--background);
+  padding: 2em 0;
+}
+main.about-me section.content article.capabilities h2 {
+  color: var(--text-color);
+}
+main.about-me section.content article.capabilities ul li::marker,
+main.about-me section.content article.capabilities ul li p {
+  color: var(--text-color);
+}
+main.about-me section.content article.personal-skills ul li::marker {
+  color: var(--secondary-text-color);
+}
+
+@media (min-width: 576px) {
+  main.about-me section.about-me-intro article.intro-background svg:first-of-type {
+    width: 60%;
+  }
+  main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
+    width: 30%;
+  }
+  main.about-me section.content article.something-about {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  main.about-me section.about-me-intro article.intro-background svg:first-of-type {
+    width: 50%;
+  }
+  main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
+    width: 25%;
+  }
+  main.about-me section.content article.something-about {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  main.about-me section.content article.something-about {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  main.about-me section.about-me-intro article.intro-background svg:first-of-type {
+    width: 40%;
+  }
+  main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
+    width: 20%;
+  }
+  main.about-me section.content article.something-about {
+    width: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  main.about-me section.about-me-intro article.intro-background svg:first-of-type {
+    width: 35%;
+  }
+  main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
+    width: 15%;
+  }
+}
+@media (min-width: 1650px) {
+  main.about-me section.content article.something-about {
     width: 40%;
   }
 }/*# sourceMappingURL=styles.css.map */
