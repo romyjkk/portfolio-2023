@@ -23,13 +23,6 @@ main.about-me {
         position: absolute;
         width: 60%;
       }
-      //   figure {
-      //     position: absolute;
-      //     width: 30%;
-      //     img {
-      //       border-radius: 100px;
-      //     }
-      //   }
     }
     article.intro-content {
       width: 90%;
@@ -43,15 +36,14 @@ main.about-me {
     }
   }
   section.content {
-    // width: 90%;
     display: flex;
     flex-direction: column;
     gap: 2em;
     article.something-about {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 0.5em;
-      width: 90%;
       align-self: center;
     }
     article.capabilities,
@@ -107,11 +99,6 @@ main.about-me {
         }
       }
     }
-    section.content {
-      article.something-about {
-        width: 80%;
-      }
-    }
   }
 }
 
@@ -125,21 +112,6 @@ main.about-me {
         svg:nth-of-type(2) {
           width: 25%;
         }
-      }
-    }
-    section.content {
-      article.something-about {
-        width: 70%;
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  main.about-me {
-    section.content {
-      article.something-about {
-        width: 60%;
       }
     }
   }
@@ -157,11 +129,6 @@ main.about-me {
         }
       }
     }
-    section.content {
-      article.something-about {
-        width: 50%;
-      }
-    }
   }
 }
 
@@ -175,16 +142,6 @@ main.about-me {
         svg:nth-of-type(2) {
           width: 15%;
         }
-      }
-    }
-  }
-}
-
-@media (min-width: 1650px) {
-  main.about-me {
-    section.content {
-      article.something-about {
-        width: 40%;
       }
     }
   }

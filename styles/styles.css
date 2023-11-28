@@ -62,9 +62,6 @@ em {
   width: 90%;
 }
 
-main.home section.introduction p {
-  width: 80%;
-}
 main.home section.projects article article.content h2 {
   text-align: center;
 }
@@ -88,8 +85,8 @@ main.project-page section.process h2 {
   h1 {
     font-size: 1.5em;
   }
-  main section.introduction p {
-    width: 70%;
+  .text {
+    width: 80%;
   }
 }
 @media (min-width: 768px) {
@@ -101,11 +98,11 @@ main.project-page section.process h2 {
   small {
     font-size: 1em;
   }
-  main section.introduction p {
-    width: 60%;
-  }
   main section.projects article article.content p:nth-of-type(2) {
     width: 60%;
+  }
+  .text {
+    width: 70%;
   }
 }
 @media (min-width: 992px) {
@@ -118,15 +115,26 @@ main.project-page section.process h2 {
   main section.projects article article.content p:nth-of-type(2) {
     width: 90%;
   }
+  .text {
+    width: 60%;
+  }
 }
 @media (min-width: 1400px) {
   main section.projects article article.content p:nth-of-type(2) {
     width: 100%;
   }
+  .text {
+    width: 50%;
+  }
 }
 @media (min-width: 1600px) {
   main section.projects article article.content p:nth-of-type(2) {
     width: 70%;
+  }
+}
+@media (min-width: 1650px) {
+  .text {
+    width: 40%;
   }
 }
 :root {
@@ -641,8 +649,8 @@ main.project-page section.project-introduction article.introduction-background f
 main.project-page section.project-introduction article.introduction-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
-  width: 90%;
   align-self: center;
 }
 main.project-page section.project-introduction article.introduction-text h2 {
@@ -670,9 +678,6 @@ main.project-page section.process article.content article {
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
-}
-main.project-page section.process article.content article p {
-  width: 90%;
 }
 main.project-page section.process article.content figure {
   display: flex;
@@ -774,9 +779,6 @@ main.project-page section.results figure {
 main.project-page section.results figure video {
   width: 100%;
 }
-main.project-page section.results p {
-  width: 90%;
-}
 
 a.go-to,
 button#horrorflix-go-to,
@@ -811,12 +813,6 @@ button#amoebe-go-to:hover {
   main.project-page section.project-introduction article.achievements ul {
     list-style-type: square;
   }
-  main.project-page section.project-introduction article.introduction-text {
-    width: 80%;
-  }
-  main.project-page section.process article.content article p {
-    width: 80%;
-  }
   main.project-page section.process article.content figure {
     gap: 2em;
     padding: 4em 0;
@@ -848,19 +844,10 @@ button#amoebe-go-to:hover {
   main.project-page section.process article.content figure.amoebe article.colors ul li:first-of-type {
     width: 70%;
   }
-  main.project-page section.results p {
-    width: 80%;
-  }
 }
 @media (min-width: 768px) {
   main.project-page section.project-introduction article.introduction-background svg {
     width: 60%;
-  }
-  main.project-page section.project-introduction article.introduction-text {
-    width: 70%;
-  }
-  main.project-page section.process article.content article p {
-    width: 70%;
   }
   main.project-page section.process article.content figure img {
     width: 80%;
@@ -874,9 +861,6 @@ button#amoebe-go-to:hover {
   section.results figure {
     width: 80%;
   }
-  section.results p {
-    width: 70%;
-  }
 }
 @media (min-width: 992px) {
   main.project-page section.project-introduction article.introduction-background svg {
@@ -887,13 +871,9 @@ button#amoebe-go-to:hover {
   }
   main.project-page section.project-introduction article.introduction-text {
     gap: 2em;
-    width: 60%;
   }
   main.project-page section.process {
     gap: 2em;
-  }
-  main.project-page section.process article.content article p {
-    width: 60%;
   }
   main.project-page section.process article.content figure img {
     width: 70%;
@@ -930,9 +910,6 @@ button#amoebe-go-to:hover {
   main.project-page section.results figure {
     width: 60%;
   }
-  main.project-page section.results p {
-    width: 60%;
-  }
 }
 @media (min-width: 1200px) {
   main.project-page section.project-introduction article.introduction-background svg {
@@ -940,12 +917,6 @@ button#amoebe-go-to:hover {
   }
   main.project-page section.project-introduction article.introduction-background figure {
     width: 18em;
-  }
-  main.project-page section.project-introduction article.introduction-text {
-    width: 50%;
-  }
-  main.project-page section.process article.content article p {
-    width: 50%;
   }
   main.project-page section.process article.content figure img {
     width: 60%;
@@ -965,9 +936,6 @@ button#amoebe-go-to:hover {
   main.project-page section.process article.content figure.amoebe article.colors {
     width: 50%;
   }
-  main.project-page section.results p {
-    width: 50%;
-  }
 }
 @media (min-width: 1400px) {
   main.project-page section.project-introduction article.introduction-background svg {
@@ -975,12 +943,6 @@ button#amoebe-go-to:hover {
   }
   main.project-page section.project-introduction article.introduction-background figure {
     width: 25%;
-  }
-  main.project-page section.project-introduction article.introduction-text {
-    width: 50%;
-  }
-  main.project-page section.process article.content article p {
-    width: 50%;
   }
   main.project-page section.process article.content figure img {
     width: 50%;
@@ -1006,9 +968,6 @@ button#amoebe-go-to:hover {
   main.project-page section.results figure {
     width: 50%;
   }
-  main.project-page section.results p {
-    width: 50%;
-  }
 }
 @media (min-width: 1650px) {
   main.project-page section.project-introduction {
@@ -1022,15 +981,6 @@ button#amoebe-go-to:hover {
   }
   main.project-page section.project-introduction article.introduction-background figure {
     transform: translate(0, -2em);
-  }
-  main.project-page section.project-introduction article.introduction-text {
-    width: 40%;
-  }
-  main.project-page section.process article.content article p {
-    width: 40%;
-  }
-  main.project-page section.results p {
-    width: 40%;
   }
 }
 :root {
@@ -1098,8 +1048,8 @@ main.about-me section.content {
 main.about-me section.content article.something-about {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5em;
-  width: 90%;
   align-self: center;
 }
 main.about-me section.content article.capabilities,
@@ -1139,9 +1089,6 @@ main.about-me section.content article.personal-skills ul li::marker {
   main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
     width: 30%;
   }
-  main.about-me section.content article.something-about {
-    width: 80%;
-  }
 }
 @media (min-width: 768px) {
   main.about-me section.about-me-intro article.intro-background svg:first-of-type {
@@ -1149,14 +1096,6 @@ main.about-me section.content article.personal-skills ul li::marker {
   }
   main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
     width: 25%;
-  }
-  main.about-me section.content article.something-about {
-    width: 70%;
-  }
-}
-@media (min-width: 992px) {
-  main.about-me section.content article.something-about {
-    width: 60%;
   }
 }
 @media (min-width: 1200px) {
@@ -1166,9 +1105,6 @@ main.about-me section.content article.personal-skills ul li::marker {
   main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
     width: 20%;
   }
-  main.about-me section.content article.something-about {
-    width: 50%;
-  }
 }
 @media (min-width: 1400px) {
   main.about-me section.about-me-intro article.intro-background svg:first-of-type {
@@ -1176,10 +1112,5 @@ main.about-me section.content article.personal-skills ul li::marker {
   }
   main.about-me section.about-me-intro article.intro-background svg:nth-of-type(2) {
     width: 15%;
-  }
-}
-@media (min-width: 1650px) {
-  main.about-me section.content article.something-about {
-    width: 40%;
   }
 }/*# sourceMappingURL=styles.css.map */

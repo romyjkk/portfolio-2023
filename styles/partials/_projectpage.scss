@@ -30,8 +30,8 @@ main.project-page {
     article.introduction-text {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 1em;
-      width: 90%;
       align-self: center;
       h2 {
         text-align: center;
@@ -58,9 +58,6 @@ main.project-page {
         flex-direction: column;
         align-items: center;
         gap: 0.5em;
-        p {
-          width: 90%;
-        }
       }
       figure {
         display: flex;
@@ -181,9 +178,6 @@ main.project-page {
         width: 100%;
       }
     }
-    p {
-      width: 90%;
-    }
   }
 }
 
@@ -221,17 +215,9 @@ button#amoebe-go-to {
           list-style-type: square;
         }
       }
-      article.introduction-text {
-        width: 80%;
-      }
     }
     section.process {
       article.content {
-        article {
-          p {
-            width: 80%;
-          }
-        }
         figure {
           gap: 2em;
           padding: 4em 0;
@@ -269,11 +255,6 @@ button#amoebe-go-to {
         }
       }
     }
-    section.results {
-      p {
-        width: 80%;
-      }
-    }
   }
 }
 
@@ -285,17 +266,9 @@ button#amoebe-go-to {
           width: 60%;
         }
       }
-      article.introduction-text {
-        width: 70%;
-      }
     }
     section.process {
       article.content {
-        article {
-          p {
-            width: 70%;
-          }
-        }
         figure {
           img {
             width: 80%;
@@ -318,9 +291,6 @@ button#amoebe-go-to {
     figure {
       width: 80%;
     }
-    p {
-      width: 70%;
-    }
   }
 }
 
@@ -337,17 +307,11 @@ button#amoebe-go-to {
       }
       article.introduction-text {
         gap: 2em;
-        width: 60%;
       }
     }
     section.process {
       gap: 2em;
       article.content {
-        article {
-          p {
-            width: 60%;
-          }
-        }
         figure {
           img {
             width: 70%;
@@ -393,9 +357,6 @@ button#amoebe-go-to {
       figure {
         width: 60%;
       }
-      p {
-        width: 60%;
-      }
     }
   }
 }
@@ -411,20 +372,11 @@ button#amoebe-go-to {
           width: 18em;
         }
       }
-      article.introduction-text {
-        width: 50%;
-      }
     }
     section.process {
       article.content {
-        article {
-          p {
-            width: 50%;
-          }
-        }
         figure {
           img {
-            // width: 50%;
             width: 60%;
           }
         }
@@ -451,11 +403,6 @@ button#amoebe-go-to {
         }
       }
     }
-    section.results {
-      p {
-        width: 50%;
-      }
-    }
   }
 }
 
@@ -470,17 +417,9 @@ button#amoebe-go-to {
           width: 25%;
         }
       }
-      article.introduction-text {
-        width: 50%;
-      }
     }
     section.process {
       article.content {
-        article {
-          p {
-            width: 50%;
-          }
-        }
         figure {
           img {
             width: 50%;
@@ -518,9 +457,6 @@ button#amoebe-go-to {
       figure {
         width: 50%;
       }
-      p {
-        width: 50%;
-      }
     }
   }
 }
@@ -539,23 +475,6 @@ button#amoebe-go-to {
         figure {
           transform: translate(0, -2em);
         }
-      }
-      article.introduction-text {
-        width: 40%;
-      }
-    }
-    section.process {
-      article.content {
-        article {
-          p {
-            width: 40%;
-          }
-        }
-      }
-    }
-    section.results {
-      p {
-        width: 40%;
       }
     }
   }

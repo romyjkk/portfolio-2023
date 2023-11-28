@@ -44,11 +44,6 @@ em {
 }
 
 main.home {
-  section.introduction {
-    p {
-      width: 80%;
-    }
-  }
   section.projects {
     article {
       article.content {
@@ -78,7 +73,6 @@ main.project-page {
   }
   section.process {
     h2 {
-      // font-size: 1.3em;
       text-align: center;
     }
   }
@@ -88,12 +82,8 @@ main.project-page {
   h1 {
     font-size: 1.5em;
   }
-  main {
-    section.introduction {
-      p {
-        width: 70%;
-      }
-    }
+  .text {
+    width: 80%;
   }
 }
 
@@ -109,11 +99,6 @@ main.project-page {
   }
 
   main {
-    section.introduction {
-      p {
-        width: 60%;
-      }
-    }
     section.projects {
       article {
         article.content {
@@ -123,6 +108,10 @@ main.project-page {
         }
       }
     }
+  }
+
+  .text {
+    width: 70%;
   }
 }
 
@@ -144,14 +133,12 @@ main.project-page {
       }
     }
   }
+  .text {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1400px) {
-  // figcaption,
-  // p,
-  // em {
-  //   font-size: 1.2em;
-  // }
   main {
     section.projects {
       article {
@@ -162,6 +149,9 @@ main.project-page {
         }
       }
     }
+  }
+  .text {
+    width: 50%;
   }
 }
 
@@ -176,5 +166,11 @@ main.project-page {
         }
       }
     }
+  }
+}
+
+@media (min-width: 1650px) {
+  .text {
+    width: 40%;
   }
 }
