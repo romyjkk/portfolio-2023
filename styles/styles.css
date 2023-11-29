@@ -1059,6 +1059,8 @@ main.about-me section.content article.personal-skills {
   gap: 1em;
   align-items: center;
   width: 100%;
+  padding: 0 1em;
+  align-self: center;
 }
 main.about-me section.content article.capabilities ul,
 main.about-me section.content article.personal-skills ul {
@@ -1069,7 +1071,7 @@ main.about-me section.content article.personal-skills ul {
 }
 main.about-me section.content article.capabilities {
   background: var(--background);
-  padding: 2em 0;
+  padding: 2em 1em;
 }
 main.about-me section.content article.capabilities h2 {
   color: var(--text-color);

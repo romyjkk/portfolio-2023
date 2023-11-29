@@ -53,6 +53,8 @@ main.about-me {
       gap: 1em;
       align-items: center;
       width: 100%;
+      padding: 0 1em;
+      align-self: center;
       ul {
         display: flex;
         flex-direction: column;
@@ -62,7 +64,7 @@ main.about-me {
     }
     article.capabilities {
       background: var(--background);
-      padding: 2em 0;
+      padding: 2em 1em;
       h2 {
         color: var(--text-color);
       }
