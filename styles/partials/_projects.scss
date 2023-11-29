@@ -1,7 +1,7 @@
 @import "../helpers/_variables";
 
 main.home {
-  margin: 3em 0 3em 0;
+  margin: 0em 0 3em 0;
   section.introduction {
     display: flex;
     justify-content: center;
@@ -95,6 +95,12 @@ main.home {
         }
       }
     }
+  }
+}
+
+@media (max-width: 576px) {
+  main.home {
+    padding-top: 5em;
   }
 }
 

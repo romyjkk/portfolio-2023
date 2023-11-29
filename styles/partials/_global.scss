@@ -60,3 +60,9 @@ p {
 .spoiler-warning {
   color: var(--warning-text-color);
 }
+
+@media (max-width: 576px) {
+  main {
+    padding-top: 3em;
+  }
+}
