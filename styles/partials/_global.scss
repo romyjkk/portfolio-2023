@@ -45,7 +45,7 @@ button {
 a:focus,
 button:focus {
   outline: none;
-  border: 3px dotted var(--button-active-color);
+  border: 3px dotted var(--button-focus-color);
 }
 
 p {

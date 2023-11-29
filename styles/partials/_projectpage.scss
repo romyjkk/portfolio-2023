@@ -195,6 +195,10 @@ button#amoebe-go-to {
   &:hover {
     background: var(--button-hover-color);
   }
+
+  &:active {
+    background: var(--button-active-color);
+  }
 }
 
 @media (min-width: 576px) {

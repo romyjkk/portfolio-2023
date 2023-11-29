@@ -1,9 +1,4 @@
 :root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
   --icon-sm: 16px;
   --icon-md: 24px;
   --icon-lg: 32px;
@@ -17,6 +12,7 @@
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }
 
 h1,
@@ -138,11 +134,6 @@ main.project-page section.process h2 {
   }
 }
 :root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
   --icon-sm: 16px;
   --icon-md: 24px;
   --icon-lg: 32px;
@@ -156,14 +147,10 @@ main.project-page section.process h2 {
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }
 
 :root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
   --icon-sm: 16px;
   --icon-md: 24px;
   --icon-lg: 32px;
@@ -177,6 +164,7 @@ main.project-page section.process h2 {
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }
 
 header {
@@ -240,6 +228,10 @@ ul.navigation a {
 ul.hamburger-menu a:hover,
 ul.navigation a:hover {
   background-size: 100% 0.1em;
+}
+ul.hamburger-menu a:active,
+ul.navigation a:active {
+  background-size: 0% 0.1em;
 }
 
 footer {
@@ -315,11 +307,6 @@ footer small {
   }
 }
 :root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
   --icon-sm: 16px;
   --icon-md: 24px;
   --icon-lg: 32px;
@@ -333,6 +320,7 @@ footer small {
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }
 
 main.home {
@@ -400,7 +388,7 @@ main.home section.projects article article.background a:hover img {
   transform: scale(1.1);
 }
 main.home section.projects article article.background a:active img {
-  filter: drop-shadow(0em 0em 0.5em #1a1a1a);
+  filter: drop-shadow(0em 0em 0.5em #616161);
 }
 main.home section.projects article article.content {
   display: flex;
@@ -517,11 +505,6 @@ main.home section.projects article article.button a:hover {
   }
 }
 :root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
   --icon-sm: 16px;
   --icon-md: 24px;
   --icon-lg: 32px;
@@ -535,6 +518,7 @@ main.home section.projects article article.button a:hover {
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }
 
 * {
@@ -582,7 +566,7 @@ button {
 a:focus,
 button:focus {
   outline: none;
-  border: 3px dotted var(--button-active-color);
+  border: 3px dotted var(--button-focus-color);
 }
 
 p a {
@@ -597,11 +581,6 @@ p a:hover {
 }
 
 :root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
   --icon-sm: 16px;
   --icon-md: 24px;
   --icon-lg: 32px;
@@ -615,6 +594,7 @@ p a:hover {
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }
 
 main.project-page {
@@ -795,6 +775,11 @@ a.go-to:hover,
 button#horrorflix-go-to:hover,
 button#amoebe-go-to:hover {
   background: var(--button-hover-color);
+}
+a.go-to:active,
+button#horrorflix-go-to:active,
+button#amoebe-go-to:active {
+  background: var(--button-active-color);
 }
 
 @media (min-width: 576px) {
@@ -984,11 +969,6 @@ button#amoebe-go-to:hover {
   }
 }
 :root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
   --icon-sm: 16px;
   --icon-md: 24px;
   --icon-lg: 32px;
@@ -1002,6 +982,7 @@ button#amoebe-go-to:hover {
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }
 
 main.about-me {

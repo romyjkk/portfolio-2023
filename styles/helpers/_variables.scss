@@ -1,12 +1,4 @@
 :root {
-  // breakpoints
-
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1440px;
-
   // icon sizes
 
   --icon-sm: 16px;
@@ -22,12 +14,6 @@
   --secondary-background: #c9d3e3;
   --tertiary-background: #efefef;
 
-  // --background: #efefef;
-  // --secondary-background: #466ca4;
-  // // --secondary-background: #a2bed8;
-  // --tertiary-background: #1c4b8e;
-  // --quartenary-background: #a2bed8;
-
   // text
 
   --text-color: #efefef;
@@ -39,4 +25,5 @@
   --button-color: #466ca4;
   --button-hover-color: #253957;
   --button-active-color: #1a1a1a;
+  --button-focus-color: #efefef;
 }

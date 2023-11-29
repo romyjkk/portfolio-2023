@@ -68,6 +68,10 @@ ul.navigation {
       background-size: 100% 0.1em;
     }
 
+    &:active {
+      background-size: 0% 0.1em;
+    }
+
     // animation: https://codepen.io/nerdcowboy/pen/abNNKZe
   }
 }
