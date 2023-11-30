@@ -27,16 +27,4 @@ closeMenuButton.addEventListener("click", closeMenu);
 
 // horrorflix
 
-document.getElementById("horrorflix-go-to").addEventListener("click", () => {
-  document
-    .getElementById("horrorflix-results")
-    .scrollIntoView({ behavior: "smooth" });
-});
-
 // a-moebe
-
-document.getElementById("amoebe-go-to").addEventListener("click", () => {
-  document
-    .getElementById("amoebe-results")
-    .scrollIntoView({ behavior: "smooth" });
-});
