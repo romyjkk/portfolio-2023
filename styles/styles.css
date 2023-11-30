@@ -666,6 +666,7 @@ main.project-page section.process article.content {
   grid-row-gap: 2em;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 main.project-page section.process article.content article {
   display: flex;
