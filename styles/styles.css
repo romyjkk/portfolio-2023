@@ -978,9 +978,6 @@ button#amoebe-go-to:active {
   main.project-page section.project-introduction article.introduction-background svg {
     width: 40%;
   }
-  main.project-page section.project-introduction article.introduction-background figure {
-    transform: translate(0, -2em);
-  }
 }
 :root {
   --icon-sm: 16px;
