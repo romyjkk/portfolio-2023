@@ -53,7 +53,7 @@ main.about-me {
       gap: 1em;
       align-items: center;
       width: 100%;
-      padding: 0 1em;
+      // padding: 0 1em;
       align-self: center;
       ul {
         display: flex;
@@ -64,7 +64,7 @@ main.about-me {
     }
     article.capabilities {
       background: var(--background);
-      padding: 2em 1em;
+      padding: 2em 0;
       h2 {
         color: var(--text-color);
       }
@@ -83,6 +83,25 @@ main.about-me {
           &::marker {
             color: var(--secondary-text-color);
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  main.about-me {
+    section.content {
+      article.capabilities,
+      article.personal-skills {
+        h2,
+        ul {
+          width: 90%;
+          align-self: center;
+          width: fit-content;
+        }
+        h2 {
+          text-align: center;
         }
       }
     }

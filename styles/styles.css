@@ -1051,7 +1051,6 @@ main.about-me section.content article.personal-skills {
   gap: 1em;
   align-items: center;
   width: 100%;
-  padding: 0 1em;
   align-self: center;
 }
 main.about-me section.content article.capabilities ul,
@@ -1063,7 +1062,7 @@ main.about-me section.content article.personal-skills ul {
 }
 main.about-me section.content article.capabilities {
   background: var(--background);
-  padding: 2em 1em;
+  padding: 2em 0;
 }
 main.about-me section.content article.capabilities h2 {
   color: var(--text-color);
@@ -1076,6 +1075,20 @@ main.about-me section.content article.personal-skills ul li::marker {
   color: var(--secondary-text-color);
 }
 
+@media (max-width: 576px) {
+  main.about-me section.content article.capabilities h2,
+  main.about-me section.content article.capabilities ul,
+  main.about-me section.content article.personal-skills h2,
+  main.about-me section.content article.personal-skills ul {
+    width: 90%;
+    align-self: center;
+    width: fit-content;
+  }
+  main.about-me section.content article.capabilities h2,
+  main.about-me section.content article.personal-skills h2 {
+    text-align: center;
+  }
+}
 @media (min-width: 576px) {
   main.about-me section.about-me-intro article.intro-background svg:first-of-type {
     width: 60%;
